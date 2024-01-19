@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Esta sección se utiliza para incluir metadatos y enlaces externos 
+La misma estructuta se repite en todos los codigos HTML de esta proyecto-->
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="frida" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frida VR Experience</title>
+    <link rel="icono" href="../media/logo_azul.png" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="../frida/frida.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Inter+Tight:wght@300&family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<!--Este bloque representa la estructura del encabezado de la página, incluye una línea , la marca "MIRIAM", 
+y una barra de navegación con enlaces a las secciones de trabajo y "ABOUT" del portafolio. La misma estructuta se 
+repite en todos los codigos HTML de este proyecto-->
+
+
+    <header class="cabecera">
+        <div class="linea"></div> 
+        <nav class="barranavegacion">
+            <p class="barranavegacion__marca"><a href="../index.html">MIRIAM</a></p>
+            <ul class="barranavegacion__lista">
+                <li class="barranavegacion__lista__elemento__work"><a href="../index.html">Work</a></li>
+                <li class="barranavegacion__lista__elemento"><a href="../aboutMe/about.html" >ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Botonenes de navegacion parala pagina previa y la siguiente-->
+    <body>
+  
+
+    <div id="cursor"></div>
+
+    <!--Galeria dinamica de imagenes junto a CSS y javaScript-->
+
+    <div class="elementos__contenedor__galeria">
+        <div class="elementos__galeria">
+            <div class="elementos__galeria__texto">
+                <p class="galeria__titulo">BLIT. STUDIO</p>
+            </div>
+        <div class="titulo__botones">
+            <a href="../3dDesign/3dDesign.html" class="previo">
+                <img src="../media/arrow-left-solid.svg" >
+            </a>
+            <a href="../davis/davis.html" class="siguiente">
+                <img src="../media/arrow-right-solid (1).svg">
+            </a>
+        </div>
+    </div>
+             <!--Texto descriptivo-->
+
+        <div class="contenedor__frida">
+            <p class="galeria__titulo articulo">Frida Khalo-VR experience</p>
+            <p class="galeria__texto articulo">3D modelling | texturing | shading</p>
+        <div class="contenedor__frida__articulo">
+            <p>These frames display 3D assets I crafted for a virtual reality (VR) experience at sala IDEAL 
+            in Barcelona as part of the  Frida Kahlo exhibition titled "Life of an Icon." The project aimed 
+            to immerse the audience in the world of the Mexican artist, providing an interactive encounter with 
+            her life and work. The experience was a challenging collective effort, I utilized various software 
+            tools, including Maya, Substance Painter, and Z-brush.
+            </p><br>Full project can be seen 
+            <a href="https://blit.studio/portfolio/cadavre-exquis-frida-kahlo-vr-experience">HERE
+            </a>
+        </div>
+        </div>
+    </div>
+    <div class="contenedor__galeria">
+            <ul class="galeria">
+                <li class="galeria__imagenes"></li>
+                <li class="galeria__imagenes"></li>
+                <li class="galeria__imagenes"></li>
+            </ul>
+            <p class="galeria__mover">Slide with the mouse</p>
+        </div>
+
+       
+
+     <!--Enlace javaScript-->
+
+      <script src="../frida/frida.js"></script>
+</body>
+
+<!--Footer-->
+
+<footer>
+    <div class="linea__social">
+    </div>
+    <div class="social__media__contenedor">
+        <div class="social__media">
+            <img src="../media/square-behance (1).svg" class="social__media__icon">
+            <a href="https://www.behance.net/kloklox2967ff" class="social__media__text " target="_blank" >BEHANCE</a>
+            <img src="../media/linkedin (1).svg" class="social__media__icon">
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" 
+            target="_blank" class="social__media__text ">LINKEDIN</a>
+            <img src="../media/envelope-solid (1).svg" class="social__media__icon">
+            <a href="../contact/contact.html" class="social__media__text" target="_blank">EMAIL</a>
+        </div>
+    </div>
+</footer>
+</html>

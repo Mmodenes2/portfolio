@@ -1,0 +1,332 @@
+/*Define las variables de color*/
+:root {
+    --black: #232322;
+    --white:#f6f4ea;
+    --black_lighter: #343433;
+    --grey:#6f6f6e;
+    --gold:#daa520;
+    --lightgold:#f7dd9c;
+    --blue:rgb(30, 93, 161);
+
+  }
+/*Define las fuentes*/
+@font-face{
+    font-family: robB;
+    src:url("../fonts/Roboto-Bold.ttf"); 
+}
+
+@font-face{
+    font-family: out;
+    src:url("../fonts/outward-borders-webfont.ttf"); 
+}
+@font-face{
+    font-family:robL;
+    src:url("../fonts/Roboto-Light.ttf"); 
+}
+@font-face{
+    font-family:Arch;
+    src:url("../fonts/outward-block.ttf"); 
+}
+@font-face{
+    font-family:robM;
+    src:url("../fonts/Roboto-Medium.ttf"); 
+}
+@font-face{
+    font-family:robT;
+    src:url("../fonts/Roboto-Thin.ttf"); 
+}
+/* Define estilos globales a la página*/
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f7dd9c;
+    
+}
+.cabecera{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.linea{
+    margin:1rem 1rem 0;
+    height: 0.10rem;
+    width: 95%;
+    background-color: var(--black);
+
+}
+.barranavegacion{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 3rem 0 2rem;
+    padding: 0; 
+
+}
+.barranavegacion__lista{
+    display: flex;
+    justify-content: start;
+    width: 44rem;
+    margin:0;
+
+}
+.barranavegacion__lista__elemento{
+    list-style: none;
+    color: var(--black);
+    font-family: robB;
+    margin: 0.6rem 1rem;
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 20px;
+   
+}
+.barranavegacion__lista__elemento__work{
+    color: var(--black);
+    font-family: robL;
+    margin: 0.5rem 1rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+   
+}
+.cabecera a {
+    text-decoration: none;
+    color: var(--black);
+   
+}
+.barranavegacion__marca{
+    font-size: 1rem;
+    font-family: robL;
+    color: var(--white);
+    margin: 0.6rem 3rem;
+    padding: 0.3rem 0.4rem ;
+   
+}
+.formulario__contenedor{
+    font-family: robL;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 8rem 6rem;
+    height: auto;
+
+}
+.formulario__elementos{
+    display: flex;
+
+}
+.formulario__imagen{
+    color: var(--black);
+    font-size: 15rem;
+    font-family: robB;
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 8px;
+    margin-right:2rem ;
+
+}
+form {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    width: 45vw;
+    border: 1px solid var(--black);
+    margin-left: 2rem;
+
+}
+#cursor{
+    position:absolute;
+    width: 50px;
+    height:50px;
+    backdrop-filter: blur(0.1px);
+    -webkit-backdrop-filter: blur(0.1px);
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.6s, height 0.6s;
+    z-index: 4000;
+
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--black); 
+
+  }
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    color: var(--black);
+    background-color: transparent; 
+    border: 1px solid var(--black); 
+    border-radius: 4px;
+
+}
+button {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: var(--gold);
+  
+}
+  /*Especifica la posicion y el estilo del footer*/
+.social__media__contenedor {
+    background-color: transparent;
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    justify-content: end;
+    background-color: #f7dd9c;
+
+}
+.social__media {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+  
+}
+.social__media__text {
+    font-family: robL;
+    color: var(--black);
+    margin: 0;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+
+}
+.social__media__icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+
+}
+.linea__social{
+    margin: 10rem 2rem 0 ;
+    height: 0.10rem;
+    background-color: var(--black);
+    justify-content: center;
+
+}
+/*Ajusta la posicion y el tamaño de los elementos para las pantallas con un máximo de 768px*/
+@media screen and (max-width: 768px) {
+    .barranavegacion{
+        margin:0 ;
+    
+    }   
+    .barranavegacion__lista{
+        width: 100%;
+    
+    }
+    .barranavegacion__marca{
+        margin: 0.5rem 0 0 1rem;
+    
+    } 
+    .formulario__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem 0;
+    
+    }
+    .formulario__imagen{
+        color: var(--black);
+        font-size: 10rem;
+        margin:0 0 5rem 0;
+        
+    }
+    form {
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 8px;
+        width: 80vw;
+        border: 1px solid var(--black);
+        margin-left: 0;
+    
+      }
+    .linea__social{
+        margin: 7rem 2rem 0;
+    
+    }
+}
+@media screen and (min-width: 1600px){
+
+    .barranavegacion__lista__elemento{
+        font-size: 1.8rem;
+    }
+
+    .barranavegacion__marca{
+        font-size: 1.8rem;
+    }
+
+    .barranavegacion__lista__elemento__work{
+        font-size: 1.8rem;
+    }
+    .formulario__imagen{
+        font-size: 30rem;
+        
+    }
+    label {
+        font-size: 1.8rem;
+    
+    }
+    form {
+        width: 60vw;
+        height: 25vw;
+        padding: 2rem;
+
+    }
+    input,
+    textarea {
+        width: 100%;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    
+    }
+    button {
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    .formulario__contenedor{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        height: 80vh;
+    
+    }
+    .social__media{
+        margin: 0.5rem;
+
+    }
+    .social__media__text {
+        font-size: 1.5rem;
+
+    }
+    .social__media__icon {
+        height: 27px;
+        width: 27px;
+        margin-right: 1rem; 
+    }
+}

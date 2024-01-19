@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Esta sección se utiliza para incluir metadatos y enlaces externos 
+La misma estructuta se repite en todos los codigos HTML de esta proyecto-->
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="3dDesign" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Design</title>
+    <link rel="icono" href="../media/logo_azul.png" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="../3dDesign/3dDesign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Inter+Tight:wght@300&family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Este bloque representa la estructura del encabezado de la página, incluye una línea , la marca "MIRIAM", 
+    y una barra de navegación con enlaces a las secciones de trabajo y "ABOUT" del portafolio. La misma estructuta se 
+    repite en todos los codigos HTML de este proyecto-->
+
+    <header class="cabecera">
+        <div class="linea"></div> 
+        <nav class="barranavegacion">
+            <p class="barranavegacion__marca"><a href="../index.html">MIRIAM</a></p>
+            <ul class="barranavegacion__lista">
+                <li class="barranavegacion__lista__elemento__work"><a href="../index.html">Work</a></li>
+                <li class="barranavegacion__lista__elemento"><a href="../aboutMe/about.html" >ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Dentro de este contenedor se encuentra el titulo de la página y dos botonenes de navegacion para la pagina previa y la siguiente,
+    en la linea siguiente se encuentran las palabras clave relacionadas con la categoria de la página y un texto explicativo-->
+
+        <div class="titulo__contenedor">
+            <div class="titulo__3d">3D DESIGN</div>
+            <div class="titulo__botones">
+                <a href="../index.html" class="previo">
+                     <img src="../media/arrow-left-solid.svg" >
+                </a>
+                <a href="../2dDesign/2dDesign.html" class="siguiente">
+                    <img src="../media/arrow-right-solid (1).svg">
+                </a>
+             </div>
+            </div>
+
+            <!--Este código crea un cursor que sigue el movimiento del ratón, cambia de tamaño al pasar sobre distintos elementos 
+           e invierte el color .Se controla a traves de JavaScript y la misma estructura se repite en todo el proyecto-->
+
+            <div id="cursor"></div>
+
+            <!--Contenedor con las palabras clave y texto descriptivo-->
+
+            <div class="keywords__contenedor">
+                <div class="keywords__filas">
+                    <div class="keywords__elementos__fila1">
+                        <span class="keywords">Lighting</span>
+                        <span class="keywords">Modelling</span>
+                        <span class="keywords">Shading</span>
+                    </div>
+                    <div class="keywords__elementos__fila2">
+                        <span class="keywords">Motion </span>
+                        <span class="keywords">Rendering</span>
+                        <span class="keywords">Texturing</span>
+                    </div>
+                </div>
+            <div class="keywords__texto">
+                From crafting virtual spaces and animating immersive visuals, 
+                I've been actively involved in various projects. My journey 
+                includes collaboration with cross-functional teams and close 
+                interaction with clients to grasp their goals and requirements.
+            </div>
+        </div> 
+        <div class="linea__media"></div>
+
+        <!--Contenedor de imagenes-->
+
+        <div class="contenedor__galeria">
+            <div class="contenedor__galeria__imagenes">
+            <a href="../frida/frida.html">
+                <div class="elementos__contenedor">
+                    <img src="../media/Frida__img1.jpg" class="img__izq" alt="Life of an Icon" loading="lazy">
+                    <img src="../media/Frida__img3.jpg" class="img__dch" alt="Life of an Icon" loading="lazy">
+                </div>
+            </a>
+            <a href="../davis/davis.html">
+                <div class="elementos__contenedor">
+                    <img src="../media/Davis_img2.jpg" class="img__izq" alt="Copa Davis" loading="lazy">
+                    <img src="../media/Davis_img3.jpg" class="img__dch" alt="Copa Davis by Xiaomi" loading="lazy">
+              </div>
+            </a>
+        </div>
+        </div>
+
+    <!--Enlace javaScript-->
+
+    <script src="../3dDesign/3dDesign.js"></script>
+
+</body>
+
+<!--Footer-->
+
+<footer>
+    <div class="linea__social"></div>
+    <div class="social__media__contenedor">
+        <div class="social__media">
+         
+            <img src="../media/square-behance-2.svg" class="social__media__icon">
+            <a href="https://www.behance.net/kloklox2967ff" class="social__media__text " target="_blank" >BEHANCE</a>
+            <img src="../media/linkedin-2.svg" class="social__media__icon">
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" 
+            target="_blank" class="social__media__text ">LINKEDIN</a>
+            <img src="../media/envelope-solid.svg" class="social__media__icon">
+            <a href="../contact/contact.html" class="social__media__text" target="_blank">EMAIL</a>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--
+    Esta sección se utiliza para incluir metadatos y enlaces externos 
+    La misma estructuta se repite en todos los codigos HTML de esta proyecto-->
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="contact" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icono" href="../media/logo_azul.png" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="../contact/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Inter+Tight:wght@300&family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="linea"></div> 
+        <nav class="barranavegacion">
+            <p class="barranavegacion__marca"><a href="../index.html">MIRIAM</a></p>
+            <ul class="barranavegacion__lista">
+                <li class="barranavegacion__lista__elemento__work"><a href="../index.html">Work</a></li>
+                <li class="barranavegacion__lista__elemento"><a href="../aboutMe/about.html" >ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Este código crea un cursor que sigue el movimiento del ratón, cambia de tamaño al pasar sobre distintos elementos 
+    e invierte el color .Se controla a traves de JavaScript y la misma estructura se repite en todo el proyecto-->
+
+    <div class="formulario__contenedor">
+        <div class="formulario__elementos">
+            <div class="formulario__imagen">C.</div>
+        </div>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+    </div>
+    <!--Enlace a javascript-->
+    <div id="cursor"></div>
+    <script src="../contact/contact.js"></script>
+    
+</body>
+   <footer>
+        <div class="linea__social">
+        </div>
+        <div class="social__media__contenedor">
+            <div class="social__media">
+                <img src="../media/square-behance (1).svg" class="social__media__icon">
+                <a href="https://www.behance.net/kloklox2967ff" class="social__media__text " target="_blank" >BEHANCE</a>
+                <img src="../media/linkedin (1).svg"  class="social__media__icon">
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="social__media__text ">LINKEDIN</a>
+                <img src="../media/envelope-solid (1).svg"  class="social__media__icon">
+                <a href="../contact/contact.html" class="social__media__text" target="_blank">EMAIL</a>
+            </div>
+        </div>
+    </footer>
+</html>

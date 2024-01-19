@@ -1,0 +1,561 @@
+/*Define las variables de color*/
+:root {
+    --black: #232322;
+    --white:#f6f4ea;
+    --black_lighter: #343433;
+    --grey:#9b9b99;
+    --gold:#daa520;
+    --lightgold:#f7dd9c;
+    --lightblue:rgb(147, 182, 219);
+    --blue:rgb(30, 93, 161);
+
+  }
+/*Define las fuentes*/
+@font-face{
+    font-family: robB;
+    src:url("../fonts/Roboto-Bold.ttf");
+
+}
+@font-face{
+    font-family: out;
+    src:url("../fonts/outward-borders-webfont.ttf");
+
+}
+@font-face{
+    font-family:robL;
+    src:url("../fonts/Roboto-Light.ttf");
+
+}
+@font-face{
+    font-family:Arch;
+    src:url("../fonts/outward-block.ttf");
+
+}
+@font-face{
+    font-family:robM;
+    src:url("../fonts/Roboto-Medium.ttf");
+
+}
+@font-face{
+    font-family:robT;
+    src:url("../fonts/Roboto-Thin.ttf");
+
+}
+
+/* Define estilos globales a la página*/
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding: 0;
+    background:var(--white);
+    overflow-x: hidden;
+
+}
+/*Este codigo proporciona estilo al cursor. Coloca el cursor en una posición absoluta con respecto al contenedor principal.
+y centra el cursor (-50%, -50%) en relación con el punto de origen de su contenedor.*/
+
+#cursor{
+    position:absolute;
+    width: 50px;
+    height:50px;
+    backdrop-filter: blur(0.1px);
+    -webkit-backdrop-filter: blur(0.1px);
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.6s, height 0.6s;
+    z-index: 4000;
+
+}
+/*Establece el estilo de la estructura del encabezado de la página*/
+.cabecera{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.linea{
+    margin:1rem 1rem 0;
+    height: 0.10rem;
+    width: 95%;
+    background-color: var(--black);
+
+}
+.barranavegacion{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 3rem 0 2rem;
+    padding: 0; 
+
+}
+.barranavegacion__lista{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%; 
+    max-width: 44rem; 
+    margin: 0;
+
+}
+.barranavegacion__lista__elemento{
+    list-style: none;
+    color: var(--white);
+    font-family: robB;
+    margin: 0.6rem 1rem;
+    font-size: 1rem;
+    background-color: var(--black);
+    padding: 0.3rem 0.5rem;
+    border-radius: 20px;
+   
+}
+.barranavegacion__lista__elemento__work{
+    color: var(--black);
+    font-family: robL;
+    margin: 0.8rem 1rem;
+
+}
+.cabecera a {
+    text-decoration: none;
+    color: var(--black); 
+
+}
+.barranavegacion__marca{
+    font-size: 1rem;
+    font-family: robL;
+    color: var(--black);
+    margin: 0.6rem 3rem;
+    padding: 0.3rem 0.4rem ;
+
+}
+/* Define el tamaño y posicion del titulo*/
+.principal__titulo{
+    justify-content: start;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0 0 3rem;
+    text-transform: uppercase;
+    font-size: 40vw;
+    cursor:pointer;
+    color: var(--black);
+    font-family: Arch;
+    width: 90%;
+
+  }
+  .contact {
+    position: absolute;
+    top:7.5rem;
+    font-size: 0.8rem;
+    font-family: robL;
+    border: none;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    width: 3.5rem;
+    height: 7.5rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--black);
+    
+}
+.contact__nombre{
+    transform: rotate(-90deg);
+    color: var(--white);
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+}
+.contact__nombre__M{
+    margin-left: 0.5rem;
+    font-family: robM;
+   
+}
+/*Cuando el raton se desplaza soble el elemento cambia el color */
+.contact:hover {
+    background: transparent;
+    border: 1px solid var(--black);
+
+}
+.contact:hover .contact__nombre__M{
+    color: var(--black);
+    
+}
+.contact:hover .contact__nombre{
+    color: var(--black);
+    
+}
+.principal__contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/*Define el estilo del contenedor. Permite que el ancho y la altura se ajuste automáticamente al contenido */
+.principal__parrafo__contenedor {
+    height: auto;
+    margin: 1vw; 
+    padding: 4vw; 
+    max-width: 70vw; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color:var(--lightblue);
+    margin: 2vw 3vw; 
+
+}
+ /*Define el estilo del texto, establece margenes porcentuales para que se ajurate al tamaño de la pagina y establece un maximo de anchura
+ de 600px*/
+  .principal__parrafo__texto {
+    color:  rgb(30, 93, 161);
+    font-family: robL;
+    padding:2rem 0;
+    margin: 0 2vw;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700w;
+    width: auto;
+    height: auto;
+
+  }
+.fineArts{
+    font-family: robB;
+
+}
+/*Establece la posicion y el tamaño del circulo y crea una animacion llamada efecto*/
+
+#animacion__circulo{
+    height: 10rem;
+    width: 10rem;
+    right: 6rem;
+    position: relative;
+    animation: efecto 20s linear infinite;
+    color: var(--gold);
+
+}
+/*Crea la rotacion de la animacion efecto a traves de keyframes*/
+@keyframes efecto{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+/*Establece que estos elementos se posicionen de manera absoluta con respecto a su contenedor y proporciona estilo a los elementos.
+Esta clase se añade a traves de javaScript*/
+.animacion__circulo {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0px 80px;
+    font-family: robL;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: var(--black);
+
+}
+.aparece__contenedor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+    display: none;
+
+ }
+ .contact__aparece{
+    background: transparent;
+    color: var(--white);
+    font-size: 0.8rem;
+    font-family: robL;
+    border: var(--white) 1px solid;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: center;
+    right: auto;
+    width: 7.5rem;
+    height: 3.5rem;
+    display: flex;
+    border-radius: 5px;
+    display: none;
+
+ }
+ .contact__nombre__aparece{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    display: none;
+
+}
+.social__media__contenedor {
+    background-color: transparent;
+    display: flex;
+    overflow-x: auto;
+    width: 100vw;
+    justify-content: end;
+
+}
+/*Especifica la posicion y el estilo del footer*/
+.social__media {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+
+}
+.social__media__text {
+    font-family: robL;
+    color: var(--black);
+    margin: 0;
+    font-size: 0.8rem;
+    margin-right: 1rem; 
+
+}
+ a {
+    text-decoration: none;
+
+}
+.social__media__icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px; 
+
+}
+.linea__social{
+    margin: 5rem 2rem 0;
+    height: 0.10rem;
+    background-color: var(--black);
+    justify-content: center;
+   
+}
+ /*Ajusta la posicion y el tamaño de los elementos para las pantallas con un máximo de 768px*/
+@media  screen and (max-width: 768px) {
+.barranavegacion{
+    margin:0 ;
+
+}  
+.contact {
+    display: none;
+
+} 
+#animacion__circulo{
+    height: 10rem;
+    width: 10rem;
+    right: 0;
+    top:3rem;
+    position: relative;
+    animation: efecto 20s linear infinite;
+    color: var(--gold);
+    
+}
+.aparece__contenedor{
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+
+}
+.contact__aparece{
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    color: var(--white);
+
+}
+.contact__nombre__aparece{
+    display: block;
+    display: flex;
+    justify-content: center;
+
+}
+.contact__nombre__aparece__M{
+    display: block;
+
+}
+.barranavegacion__lista{
+    width: 100%;
+
+}
+.barranavegacion__marca{
+    margin: 0.5rem 0 0 1rem; 
+
+}
+.cartas__trabajos {
+    flex-direction: column;
+    align-content: center;
+    margin: 2rem 0;
+
+}
+.principal__titulo{
+    margin: 2rem 0 0;
+    padding: 2rem;
+    font-size: 12rem;
+    justify-content: flex-start;
+
+}
+.principal__elementos{
+    width: 100%;
+
+}
+.principal__contenedor{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+.principal__parrafo__contenedor{
+    padding: 2rem;
+    height: auto;
+    margin: 0 3vw;
+    width: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+}
+.principal__parrafo__texto {
+    width: auto;
+    margin: 2rem 0 ;
+  
+}
+.principal__cuadrado{
+    justify-self: center;
+    align-self: center;
+    height: 12rem;
+    width: 12rem;
+    margin: 5rem 0 0;
+  
+}
+.aparece__contenedor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 7rem 0;
+
+ }
+.linea__social{
+    margin: 5rem 1rem 0;
+
+}
+}
+
+ /*Ajusta la posicion y el tamaño de los elementos para las pantallas a partir de  de 1600px*/
+@media screen and (min-width: 1600px){
+.barranavegacion__lista__elemento{
+    font-size: 1.8rem;
+
+}
+.barranavegacion__marca{
+    font-size: 1.8rem;
+
+}
+.barranavegacion__lista__elemento__work{
+    font-size: 1.8rem;
+
+}
+.contact {
+    top:11rem;
+    font-size: 1.2rem;
+    font-family: robL;
+    right: 0;
+    width: 5rem;
+    height: 10rem;
+
+}
+.contact__nombre{
+    transform: rotate(-90deg);
+    color: var(--white);
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+}
+.contact__nombre__M{
+    margin-left: 0.5rem;
+    font-family: robM;
+}
+
+.principal__titulo{
+    font-size: 45rem;
+    margin:4vw 0 0 2vw;
+       
+}
+.principal__parrafo__texto {
+    font-size: 1.3rem;
+
+}
+.principal__contenedor{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 5rem 0 10rem;
+
+}
+#animacion__circulo{
+    height: 20rem;
+    width: 20rem;
+    left: 5rem;
+    position: relative;
+    animation: efecto 20s linear infinite;
+    color: var(--gold);
+
+}
+/*Crea la rotacion de la animacion efecto a traves de keyframes*/
+@keyframes efecto{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+/*Establece que estos elementos se posicionen de manera absoluta con respecto a su contenedor y proporciona estilo a los elementos.
+Esta clase se añade a traves de javaScript*/
+.animacion__circulo {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0px 160px;
+    font-family: robL;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--black);
+    
+}
+.principal__cuadrado{
+    height: 23rem;
+    width: 23rem;
+    border-radius: 20px;
+    display: flex;
+    align-self: flex-start;
+    justify-self:flex-end;
+    margin: 2vw 4vw;
+
+}
+.principal__parrafo__texto {
+    font-size: 2rem;
+
+}
+.social__media{
+     margin: 0.5rem;
+
+}
+.social__media__text {
+    font-size: 1.5rem;
+
+}
+.social__media__icon {
+    height: 27px;
+    width: 27px;
+    margin-right: 1rem; 
+
+}   
+}

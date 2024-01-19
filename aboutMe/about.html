@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <!--
+Esta sección se utiliza para incluir metadatos y enlaces externos 
+La misma estructuta se repite en todos los codigos HTML de esta proyecto-->
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="cursor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >About me</title>
+    <link rel="icono" href="../media/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../AboutMe/styles_about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Inter+Tight:wght@300&family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Este bloque representa la estructura del encabezado de la página, incluye una línea , la marca "MIRIAM", 
+    y una barra de navegación con enlaces a las secciones de trabajo y "ABOUT" del portafolio. La misma estructuta se 
+    repite en todos los codigos HTML de este proyecto-->
+
+    <header class="cabecera">
+        <div class="linea"></div>
+        <nav class="barranavegacion">
+            <p class="barranavegacion__marca"><a href="../index.html">MIRIAM</a></p>
+                <ul class="barranavegacion__lista">
+                    <li class="barranavegacion__lista__elemento__work"><a href="../frida/frida.html">Work</a></li>
+                    <li class="barranavegacion__lista__elemento">ABOUT</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!--Titulo de la página-->
+
+    <div class="principal__titulo"> ABOUT. me.</div>
+    <a href="../contact/contact.html">
+        <button class="contact">
+            <p class="contact__nombre">Contact <span class="contact__nombre__M">M.</span></p>
+        </button>
+    </a>
+
+     <!--Texto dentro de un contenedor-->
+
+    <div class="principal__contenedor">
+        <div class="principal__parrafo__contenedor">
+            <p class="principal__parrafo__texto">I'm a <span class="fineArts">Fine Arts</span> graduate with a passion 
+            for creativity.<br> During the past years I evolve from traditional illustration to 3D and <span class="fineArts">motion design.</span>
+            After using my skills in different web projects, I decide to further master my abilities as UX/UI designer 
+            and gain knowledge in frontend development. My goal is to seamlessly blend aesthetics with functionality, aspiring to become a versatile 
+            <span class="fineArts">Visual Designer.</span>
+            </p>
+            
+        </div>
+
+        <!--junto con CSS y Javascript crea la animacion de un circulo -->
+
+        <div class="pricipal__circulo__contenedor">
+            <div id="animacion__circulo"></div>
+        </div>
+    </div>
+
+    <!--Este código crea un cursor que sigue el movimiento del ratón, cambia de tamaño al pasar sobre distintos elementos 
+    e invierte el color .Se controla a traves de JavaScript y la misma estructura se repite en todo el proyecto-->
+    
+    <div id="cursor">
+    </div>
+    <div class="aparece__contenedor">
+        <a href="../Portfolio/contact/contact.html">
+            <button class="contact__aparece">
+            <p class="contact__nombre__aparece">Contact <span class="contact__nombre__aparece__M">M.</span></p>
+        </button>
+        </a>
+    </div>
+
+    <!--Enlace a javaScript-->
+
+    <script src="../aboutMe/about.js"></script>
+</body>
+
+<!--footer-->
+
+<footer>
+     <div class="linea__social"></div>
+    <div class="social__media__contenedor">
+    <div class="social__media">
+        <img src="../media/square-behance (1).svg" class="social__media__icon">
+        <a href="https://www.behance.net/kloklox2967ff" class="social__media__text " target="_blank" >BEHANCE</a>
+        <img src="../media/linkedin (1).svg"  class="social__media__icon"></img>
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" 
+        target="_blank" class="social__media__text ">LINKEDIN</a>
+        <img src="../media/envelope-solid (1).svg"  class="social__media__icon">
+        <a href="../contact/contact.html" class="social__media__text" target="_blank">EMAIL</a>
+    </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Esta sección se utiliza para incluir metadatos y enlaces externos 
+La misma estructuta se repite en todos los codigos HTML de esta proyecto-->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="home" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIRIAM</title>
+    <link rel="icon" href="../Portfolio/media/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../Portfolio/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Inter+Tight:wght@300&family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+</head>
+<body>
+
+<!--Este bloque representa la estructura del encabezado de la página, incluye una línea , la marca "MIRIAM", 
+    y una barra de navegación con enlaces a las secciones de trabajo y "ABOUT" del portafolio. La misma estructuta se 
+    repite en todos los codigos HTML de este proyecto-->
+
+    <header class="cabecera">
+        <div class="linea"></div>
+        <nav class="barranavegacion">
+            <p class="barranavegacion__marca">MIRIAM</p>
+            <ul class="barranavegacion__lista">
+                <li class="barranavegacion__lista__elemento__work"><a href="../Portfolio/3dDesign/3dDesign.html">Work</a></li>
+                <li class="barranavegacion__lista__elemento"><a href="../Portfolio/aboutMe/about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--En este apartado se incluye el titulo de la pagina y un boton de contacto-->
+
+    <div class="titulo">
+        <p class="h1">MòDENES.</p>
+        <a href="../Portfolio/contact/contact.html">
+            <button class="contact">
+                <p class="contact__nombre">Contact <span class="contact__nombre__M">M.</span></p>
+            </button>
+        </a>
+
+<!--Este código crea un cursor que sigue el movimiento del ratón, cambia de tamaño al pasar sobre distintos elementos 
+    e invierte el color .Se controla a traves de JavaScript y la misma estructura se repite en todo el proyecto-->
+
+        <div id="cursor"></div>
+
+<!--Esta estructura representa una "marquesina" con elementos repetitivos. Junto con CSS y javaescript la marquesina esta animada con un 
+movimiento horizontal -->
+
+    </div>
+    <div class="marquesina">
+        <div class="marquesina__interna">
+            <div class="marquesina__parte">
+            PORTFOLIO
+                <div class="flecha">
+                <img src ="media/arrow-up-solid-2.svg" alt=""/>
+                </div>
+            </div>
+            <div class="marquesina__parte">
+            PORTFOLIO
+                <div class="flecha">
+                <img src ="media/arrow-up-solid-2.svg" alt=""/>
+                </div>
+            </div>
+            <div class="marquesina__parte">
+            PORTFOLIO
+                <div class="flecha">
+                <img src ="media/arrow-up-solid-2.svg" alt=""/>
+                </div>
+            </div>
+            <div class="marquesina__parte">
+            PORTFOLIO
+                <div class="flecha">
+                <img src ="media/arrow-up-solid-2.svg" alt=""/>
+                </div>
+            </div>
+            <div class="marquesina__parte">
+            PORTFOLIO
+                <div class="flecha">
+                <img src ="media/arrow-up-solid-2.svg" alt=""/>
+                </div>
+            </div>
+                <div class="marquesina__parte">
+            PORTFOLIO
+                <div class="flecha">
+                <img src ="media/arrow-up-solid-2.svg" alt=""/>
+                </div>
+            </div>
+                <div class="marquesina__parte">
+            PORTFOLIO
+                <div class="flecha">
+                <img src ="media/arrow-up-solid-2.svg" alt=""/>
+                </div>
+            </div>
+                <div class="marquesina__parte">
+            PORTFOLIO
+                <div class="flecha">
+                <img src ="media/arrow-up-solid-2.svg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+<!--Divide la seccion en 3 cartas. Cada carta tiene un enlace que dirige a una página relacionada con la categoría especifica 
+    de cada carta. -->
+
+    <section class="contenedor" >
+        <div class="cartas__trabajos" name="work">
+
+             <!-- Carta 3D Design -->
+
+            <a href="../Portfolio/3dDesign/3dDesign.html"class="carta__3d"> 
+                <p class="carta__titulo__3d">3D</p>
+                <ul class="titulo__contenedor">
+                    <li class="titulo__principal">3D DESIGN</li>
+                    <li class="titulo__elemento">Rendering</li>
+                    <li class="titulo__elemento">Lighting & shading</li>
+                    <li class="titulo__elemento">Modelling</li>
+                </ul>
+            </a>
+
+              <!-- Carta Motion -->
+
+            <a href="../Portfolio/2dDesign/2dDesign.html" class="carta__mo">
+                <p class="carta__titulo__mo">MOtion</p>
+                <ul class="titulo__contenedor">
+                    <li class="titulo__principal">2D ANIMATION</li>
+                    <li class="titulo__elemento">After effects</li>
+                    <li class="titulo__elemento">Storytelling</li>
+                    <li class="titulo__elemento">Motion graphics</li>
+                </ul>
+                </a>
+
+             <!-- Carta web Design -->
+
+        <div class="carta__web">
+            <div class="carta__titulo__web__elementos">
+                    <span class="carta__titulo__web">Web</span>
+                    <span class="carta__titulo__web__2">DESIGN</span>
+            </div>
+                <ul class="titulo__contenedor">
+                    <li class="titulo__principal">VISUAL DESIGN</li>
+                    <li class="titulo__elemento">User Experience</li>
+                    <li class="titulo__elemento">User Interface</li>
+                    <li class="titulo__elemento">Frontend development</li>
+                </ul>
+            </div>
+        </div>
+    </section >
+
+<!--Este código HTML junto con CSS y JavaScript representa una sección  con 3 cartas animadas que cambian de tamaño 
+    segun el (scroll) de la página. -->
+
+       <div class="contenedor__herramientas">
+            <div class="herramientas">
+                <p class="herramientas__texto">HERE ARE SOME OF THE TOOLS I USE:</p>
+                <span class="herramientas__texto etiqueta">I craft my creative outputs using Figma and Webflow although I love starting with just pen and paper.</span>
+            </div>
+            <div class="cartas__animacion___contenedor">
+                <div class="cartas__animacion">
+                    <div class="carta__animacion__contenedor1" id="card1">
+                        <div class="carta__animacion__texto">Cinema 4D</div>  
+                    </div>
+                <div class="carta__animacion__contenedor2" id="card2">
+                    <div class="carta__animacion__texto "> Adobe creative cloud</div>
+                    </div>
+                <div class="carta__animacion__contenedor3" id="card3">
+                    <div class="carta__animacion__texto ">HTML, CSS & JAVASCRIPT</div>
+                    </div>
+                </div>
+             <div>
+        </div>
+        </div>
+
+<!--Boton de contacto que permanece escondido y solo aparace cuando el ancho de pantalla es menor que 768px -->
+
+         <div class="aparece__contenedor">
+            <a href="../Portfolio/contact/contact.html">
+                <button class="contact__aparece">
+                <p class="contact__nombre__aparece">Contact <span class="contact__nombre__aparece__M">M.</span></p>
+            </button>
+            </a>
+        </div>
+
+<!--Enlace a javascript-->
+
+        <script src="../Portfolio/script/index.js"></script>
+
+<!--footer-->
+</body>
+    <footer>
+        <div class="linea__social">
+        </div>
+        <div class="social__media__contenedor">
+            <div class="social__media">
+                <img src="../Portfolio/media/square-behance-2.svg" class="social__media__icon">
+                <a href="https://www.behance.net/kloklox2967ff" class="social__media__text " target="_blank" >BEHANCE</a>
+                <img src="../Portfolio/media/linkedin-2.svg"  class="social__media__icon">
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="social__media__text ">LINKEDIN</a>
+                <img src="../Portfolio/media/envelope-solid.svg"  class="social__media__icon">
+                <a href="../Portfolio/contact/contact.html" class="social__media__text" target="_blank">EMAIL</a>
+            </div>
+        </div>
+    </footer>
+
+</html>
+
+
+
+   
+   

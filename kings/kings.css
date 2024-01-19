@@ -1,0 +1,405 @@
+/*Define las variables de color*/
+:root {
+    --black: #232322;
+    --white:#f6f4ea;
+    --black_lighter: #343433;
+    --grey:#6f6f6e;
+    --gold:#daa520;
+    --blue:rgb(30, 93, 161);
+
+}
+/*Define las fuentes*/
+@font-face{
+    font-family: robB;
+    src:url("../fonts/Roboto-Bold.ttf"); 
+}
+
+@font-face{
+    font-family: out;
+    src:url("../fonts/outward-borders-webfont.ttf"); 
+}
+@font-face{
+    font-family:robL;
+    src:url("../fonts/Roboto-Light.ttf"); 
+}
+@font-face{
+    font-family:Arch;
+    src:url("../fonts/outward-block.ttf"); 
+}
+@font-face{
+    font-family:robM;
+    src:url("../fonts/Roboto-Medium.ttf"); 
+}
+@font-face{
+    font-family:robT;
+    src:url("../fonts/Roboto-Thin.ttf"); 
+}
+/* Define estilos globales a la página*/
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body{
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--white);
+
+}
+/*Posiciona el botón de contacto de forma absoluta con respecto al contenedor padre y establece el tamaño y color.*/
+#cursor{
+    position:absolute;
+    width: 50px;
+    height:50px;
+    backdrop-filter: blur(0.1px);
+    -webkit-backdrop-filter: blur(0.1px);
+    background-color: transparent;
+    box-sizing: border-box;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.6s, height 0.6s;
+    z-index: 4000;
+
+}
+/*Establece el estilo de la estructura del encabezado de la página*/
+.cabecera{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.linea{
+    margin:1rem 1rem 0;
+    height: 0.10rem;
+    width: 95%;
+    background-color: var(--black);
+
+}
+.barranavegacion{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 3rem 0 2rem;
+    padding: 0; 
+
+}
+.barranavegacion__lista{
+    display: flex;
+    justify-content: start;
+    width: 44rem;
+    margin:0;
+
+}
+.barranavegacion__lista__elemento{
+    list-style: none;
+    color: var(--black);
+    font-family: robB;
+    margin: 0.6rem 1rem;
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 20px;
+   
+}
+.barranavegacion__lista__elemento__work{
+    color: var(--white);
+    font-family: robL;
+    margin: 0.5rem 1rem;
+    border: 1px solid var(--black);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+   
+}
+.cabecera a {
+    text-decoration: none;
+    color: var(--black);
+   
+}
+.barranavegacion__marca{
+    font-size: 1rem;
+    font-family: robL;
+    color: var(--black);
+    margin: 0.6rem 3rem;
+    padding: 0.3rem 0.4rem ;
+   
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+   
+}
+/*Establece el estilo de los botones*/
+.previo {
+    margin:0 0.5rem;
+    transition: transform 0.3s ease-out;
+
+}
+.previo img{
+    border: 1px solid var(--black);
+    padding: 1rem;
+    border-radius: 5px;
+    
+}
+.siguiente {
+    margin:0 0.5rem;
+    transition: transform 0.3s ease-out;
+
+}
+.siguiente img{
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    border-radius: 5px;
+    padding: 1rem;
+
+}
+.siguiente:hover{
+    transform: scale(1.06); 
+
+}
+.previo:hover{
+    transform: scale(1.06); 
+
+}
+.titulo__botones{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0.5rem 3rem;
+
+}
+.elementos__contenedor__galeria{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--white);
+    margin: 2vw;
+    border-radius: 5px;
+
+}
+.elementos__galeria{
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    margin-right: 4vw;
+   
+}
+.galeria__titulo{
+    font-family: robB;
+    font-size: 3.5vw;
+    margin: 0 1vw;
+
+}
+.galeria__texto{
+    font-family: robT;
+    font-size: 1rem;
+    margin: 0.5vw 4vw 0;
+
+}
+.galeria__texto.articulo{
+    margin: 0.5vw 1vw 0;
+
+}
+.galeria__titulo.articulo{
+    margin: 4vw 1vw 0;
+    font-size: 1.5rem;
+
+}
+.contenedor__kings__articulo{
+    font-family: robL;
+    font-size: 1rem;
+    margin: 1vw;
+    width: 90%;
+    border-radius: 10px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+
+}
+.contenedor__video{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 5rem;
+
+}
+.video___elemento{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    margin: 0 0 4rem;
+
+}
+/*Establece los estilos del footer*/
+ .social__media__contenedor {
+    background-color: transparent;
+    display: flex;
+    overflow-x: auto;
+    width: 100vw;
+    justify-content: end;
+
+}
+.social__media {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+  
+}
+.social__media__text {
+    font-family: robL;
+    color: var(--black);
+    margin: 0;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+
+}
+.social__media__icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px; 
+
+}
+.linea__social{
+    margin: 10rem 2rem 0;
+    height: 0.10rem;
+    background-color: var(--black);
+    justify-content: center; 
+
+}
+.contenedor__frida__articulo a{
+    color: var(--black);
+    font-family: robB;
+
+}
+/*Ajusta la posicion y el tamaño de los elementos para las pantallas con un máximo de 768px*/
+@media screen and (max-width: 768px) {
+.barranavegacion{
+    margin:0 ;
+
+}   
+.barranavegacion__lista{
+    width: 100%;
+
+}
+.barranavegacion__marca{
+    margin: 0.5rem 0 0 1rem; 
+
+} 
+.titulo__botones{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    padding: 0;
+    margin: 0.5rem 3rem 0.5rem 1rem;
+
+}
+.galeria__logo{
+    height: 3rem;
+    width: 3rem;
+
+}
+.galeria{
+    height: 40vh;
+        
+}
+.siguiente img{
+    padding: 0.8rem;
+
+}
+.previo img{
+    padding: 0.8rem;
+
+}
+.galeria__mover{
+    font-size: 0.8rem;
+
+}
+.contenedor__frida{
+    margin: 0;
+
+}
+.contenedor__frida__articulo{
+    width: 70%;
+   
+}
+.linea__social{
+    margin: 7rem 2rem 0;
+ 
+}
+.elementos__contenedor__galeria{
+     margin: 8vw 2vw 2vw;
+    
+}
+.video___elemento{
+    width: 90vw;
+    height: auto;
+    margin:0 0 3rem;
+
+}
+}
+/*Ajusta la posicion y el tamaño de los elementos para las pantallas a partir de  de 1600px*/
+@media screen and (min-width: 1600px){
+    .barranavegacion__lista__elemento{
+        font-size: 1.8rem;
+
+    }
+    .barranavegacion__marca{
+        font-size: 1.8rem;
+
+    }
+    .barranavegacion__lista__elemento__work{
+        font-size: 1.8rem;
+
+    }
+    .previo img{
+        padding: 1.5rem;
+
+    }
+    .siguiente img{
+        padding: 1.5rem;
+
+    }
+    .galeria__logo{
+        height: 6rem;
+        width: 6rem;
+
+    }
+    .galeria__titulo{
+        font-size: 3vw; 
+    
+    }
+    .galeria__titulo.articulo{
+        font-size: 2rem;
+    }
+    .galeria__texto{
+        font-size: 2rem;
+    
+    }
+    .galeria__logo{
+        height: 6rem;
+        width: 6rem;
+    }
+    .contenedor__kings__articulo{
+        font-size: 1.8rem;
+        margin: 3vw 1vw 3vw;
+        width: 100%;
+    
+    }
+    .social__media{
+        margin: 0.5rem;
+
+    }
+    .social__media__text {
+        font-size: 1.5rem;
+
+    }
+    .social__media__icon {
+        height: 27px;
+        width: 27px;
+        margin-right: 1rem; 
+    }
+
+    
+}
